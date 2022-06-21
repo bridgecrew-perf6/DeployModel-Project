@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    This is my homepage
+    <form action="{% url  'results' %}">
+        {% csrf_token %}
+        SEX:<input type="text", required name="SEX"><br><br>
+        Height:<input type="text", required name="Height"><br><br>
+        <input type="submit",name="",value="submit"><br><br><br><br>
+       <!-- 
+        <input type="file" name="upload" accept="image/*">
+        <br>
+        <button class="btn btn-dark my-4" type="submit">Submit</button>
+        --> 
+        <pre>
+            SEX:enter 0 for Female,1 for Male
+            Height: input in CM
+
+        </pre>
+    </form>
+</body>
+</html>
